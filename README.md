@@ -1,12 +1,79 @@
-# React + Vite
+# EmployWise 💼 - React User Management Application 🧑‍💻
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React application that integrates with the Reqres API to perform basic user management functions, including authentication 🔑, user listing 📋, editing ✏️, and deletion 🗑️.
 
-Currently, two official plugins are available:
+**Live Demo:** [https://employ-wise-pi.vercel.app/](https://employ-wise-pi.vercel.app/) 🚀
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features ✨
 
-## Expanding the ESLint configuration
+* **Authentication:** 🔐
+    * User login using email and password. 📧🔑
+    * Token-based authentication. 🔑
+    * Token persistence using local storage. 💾
+    * Error handling for invalid credentials. ❌
+* **User Listing:** 📋
+    * Paginated list of users. 📄➡️
+    * Display of user avatar 🖼️, first name 🏷️, and last name 🏷️.
+* **User Management:** 🛠️
+    * Edit user details (first name, last name, email). ✏️
+    * Delete users. 🗑️
+    * Display success or error messages after operations. ✅/❌
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies Used 💻
+
+* **React:** Frontend framework. ⚛️
+* **Axios:** HTTP client for API requests. 🌐
+* **CSS:** Custom CSS for styling. 🎨
+* **Vite:** Build tool. ⚡
+
+## Setup Instructions 🛠️
+
+1.  **Clone the repository:** 📥
+
+    ```bash
+    git clone https://github.com/SamP231004/EmployWise
+    cd EmployWise
+    ```
+
+2.  **Install dependencies:** 📦
+
+    ```bash
+    npm install
+    ```
+
+3.  **Run the application:** 🏃
+
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open the application in your browser:** 🌐
+
+    * The application will be available at `http://localhost:5173/` (or the port Vite specifies).
+
+## API Endpoint 🔗
+
+* **Base URL:** `https://reqres.in/api` 🌐
+* **Login:** `POST /api/login` 🔑
+* **User Listing:** `GET /api/users` 📋
+* **User Update:** `PUT /api/users/{id}` ✏️
+* **User Delete:** `DELETE /api/users/{id}` 🗑️
+
+## Login Credentials 🔑
+
+* **Email:** `eve.holt@reqres.in` 📧
+* **Password:** `cityslicka` 🔑
+
+## Screen Shots 📸
+
+**Login Screen:** 🔑
+
+![alt text](src/Images_Used/image_1.png)
+
+**User List Screen:** 📋
+
+![alt text](src/Images_Used/image_2.png)
+
+**Edit User Screen:** ✏️
+
+![alt text](src/Images_Used/image_3.png)
